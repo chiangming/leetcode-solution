@@ -45,4 +45,18 @@ public class Solution2_Add_Two_Numbers {
 
         return result.next;
     }
+
+    //链表反序
+    public ListNode reverseList(ListNode head){
+        if(head==null) return null;
+        ListNode pre=null;
+        ListNode next;
+        while(head!=null){
+            next=head.next;
+            head.next=pre;
+            pre=head;
+            head=next;
+        }
+        return pre;
+    }
 }
