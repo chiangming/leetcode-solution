@@ -9,7 +9,7 @@ import java.util.Map;
  * @Author mingjiang
  * @Date 2019/4/11 13:55
  */
-public class Soulution30_Substring_with_Concatenation_of_All_Words {
+public class Solution30_Substring_with_Concatenation_of_All_Words {
     public List<Integer> findSubstring(String s, String[] words) {
         final List<Integer> indexes = new ArrayList<>();
         if(s.length()==0||words.length==0) return indexes;
@@ -44,7 +44,7 @@ public class Soulution30_Substring_with_Concatenation_of_All_Words {
     public static void main(String[] args) {
         String s = "abcdef";
         String[] words= {"a","b"};
-        System.out.println(new Soulution30_Substring_with_Concatenation_of_All_Words().findSubstring(s,words).toString());
+        System.out.println(new Solution30_Substring_with_Concatenation_of_All_Words().findSubstring(s,words).toString());
         ;
     }
 }
